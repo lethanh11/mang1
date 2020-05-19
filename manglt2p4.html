@@ -7,22 +7,13 @@
 </head>
 <body>
     <script>
-        let a = prompt('Nhập tên');
-        let b = prompt('Nhập tên');
-        let str=a.length;
-        let check = true;
-        for(let i=0;i<a.length;i++){
-            if(a[i]===b[i]){
-                check=false;
-                break;
-            }
-        } document.write('Tên :'+a + '<br>');
-        document.write('Tên :'+b + '<br>');
-        if(check){
-            document.write("Hai Chuỗi giống nhau");
-        } else{
-            document.write('Hai chuỗi khác nhau');
-        }
+        let ten=['Thành','Đạt','Lân','Thắng'];
+        let count=0;
+            for(let i=0;i<ten.length;i++){
+                if(ten[i]==="");
+                count++;
+            } document.write("Mảng =" + "["+ten+"]" + '<br>');
+            document.write("Số Từ trong mảng = "+count);
     </script>
 </body>
 </html>

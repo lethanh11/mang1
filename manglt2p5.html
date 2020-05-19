@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt('Nhập tên');
+        let b = prompt('Nhập tên');
+        let str=a.length;
+        let check = true;
+        for(let i=0;i<a.length;i++){
+            if(a[i]===b[i]){
+                check=false;
+                break;
+            }
+        } document.write('Tên :'+a + '<br>');
+        document.write('Tên :'+b + '<br>');
+        if(check){
+            document.write("Hai Chuỗi giống nhau");
+        } else{
+            document.write('Hai chuỗi khác nhau');
+        }
+    </script>
+</body>
+</html>
