@@ -32,22 +32,24 @@
     <h3> bài 3 </h3>
     <script>
         var str = 'The Quick Brown Fox';
-        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
         var result = [];
 
-        for (var x = 0; x < str.length; x++) {
-            if (UPPER.includes(str[x])) {
-                result.push(str[x].toLowerCase());
+
+        for (let i = 0; i < str.length; i++) {
+
+            if (UPPER.indexOf(str[i]) !== -1) {
+                result.push(str[i].toLowerCase());
             }
-            else if (LOWER.includes(str[x])) {
-                result.push(str[x].toUpperCase());
+            else if (LOWER.indexOf(str[i]) !== -1) {
+                result.push(str[i].toUpperCase());
             }
             else {
-                result.push(str[x]);
+                result.push(str[i]);
             }
-        }
-        document.write(result.join(''));
+        } document.write(result.join(""));
+
     </script>
 </body>
 
